@@ -46,6 +46,10 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem 'devise'
 
-gem 'simple_token_authentication', '~> 1.0'
+gem 'simple_token_authentication', '~> 1.0' #Used to add the authentication_token in user table
 
-gem 'koala'
+gem 'koala' #Used for facebook graph api
+
+gem 'faker'
+
+gem 'pry'

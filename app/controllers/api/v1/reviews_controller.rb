@@ -10,6 +10,7 @@ class Api::V1::ReviewsController < ApplicationController
     json_response "Review index successfully", true, {reviews: reviews_serializer}, :ok
   end
 
+  #Review show method
   def show
     review_serializer = parse_json @review
     json_response "Review show successfully", true, {review: review_serializer}, :ok

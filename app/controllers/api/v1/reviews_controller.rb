@@ -3,6 +3,7 @@ class Api::V1::ReviewsController < ApplicationController
   before_action :load_review, only: [:show, :update, :destroy]
   before_action :authenticate_with_token!, only: [:create, :update, :destroy]
 
+  #Review index method
   def index
     reviews = @book.reviews
     reviews_serializer = parse_json reviews

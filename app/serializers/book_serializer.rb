@@ -1,5 +1,6 @@
 class BookSerializer < ActiveModel::Serializer
-  attributes :id, :title, :author, :image, :average_content_rating, :average_recommend_rating
+  attributes :id, :title, :author, :image 
+  # :average_content_rating, :average_recommend_rating
   has_many :reviews
 
   def average_content_rating
